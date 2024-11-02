@@ -1,7 +1,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Satisfy&family=Shadows+Into+Light&display=swap');
 
 /*
 .shadows-into-light-regular {
@@ -40,7 +40,7 @@ Fonts are separated by a | */
   --accent3-color:   #5C6B73;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Edu AU VIC WA NT Hand", "IM Fell French Canon SC";
+  --heading-font: "Edu AU VIC WA NT Hand", "Satisfy", "IM Fell French Canon SC";
   --paragraph-font: "Caveat", "Shadows Into Light", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
