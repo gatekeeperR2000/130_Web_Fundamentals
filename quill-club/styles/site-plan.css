@@ -94,6 +94,7 @@ p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   padding: 1em;
+  font-size: 24px;
 }
 .colors {
   width: 100%;
