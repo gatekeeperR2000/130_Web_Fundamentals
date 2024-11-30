@@ -1,0 +1,349 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Satisfy&family=Shadows+Into+Light&display=swap');
+
+/* 
+    <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 400 to 700
+
+
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.edu-au-vic-wa-nt-guides-regular {
+  font-family: "Edu AU VIC WA NT Guides", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caveat-regular {
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+
+/* Root values for styleing */
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color:   #253237;
+    --secondary-color: #9DB4C0;
+    --accent1-color:   #C2DFE3;
+    --accent2-color:   #E0FBFC;
+    --accent3-color:   #5C6B73;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Edu AU VIC WA NT Hand", "Satisfy", "IM Fell French Canon SC";
+    --paragraph-font: "Caveat", "Shadows Into Light", sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white:    #5C6B73;  /* headlines on a white background */ 
+    --headline-color-on-color:    #C2DFE3; /* headlines on a colored background */ 
+    --paragraph-color-on-white:   #5C6B73; /* paragraph text on a white background */ 
+    --paragraph-color-on-color:   #E0FBFC; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #253237;
+    --nav-link-color: #C2DFE3;
+    --nav-background-color: #253237;
+    --nav-hover-link-color: #C2DFE3;
+    --nav-hover-background-color: #5C6B73;
+  }
+body {
+        background-color: var(--secondary-color);
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* ###################################################################################### */
+/* ############################## Header and Nav bar section ############################ */
+/* ###################################################################################### */
+header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#hero-box{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 0px;
+
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#hero-box img{
+    width: 100%;
+    height: 100%;
+
+    grid-area:  1/1/3/4;
+    z-index: 1;
+}
+
+#hero-box h1 {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);   
+
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+
+    margin: 10% 30% 40% 30%;
+    padding: 20px 0px;
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 1;
+}
+
+#hero-box h4 {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: 2em;
+    color: var(--paragraph-color-on-color);
+
+    margin: 20% 10% 10% 10%;
+    padding: 2% 2%;
+
+    grid-column: 2/3;
+    grid-row: 2/3;
+    z-index: 1;
+}
+
+.logo {
+    width: 80px;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--nav-background-color);
+}
+
+nav a {
+    text-align: center;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: 1.5em;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+/* ###################################################################################### */
+/* ##################################### Main Section ################################### */
+/* ###################################################################################### */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding-top: 100px;
+}
+
+#home-welcome, #home-s1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-column: 1/3;
+}
+
+#home-welcome h1 {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);  
+
+    grid-column: 1/2;
+    grid-row: 1/2;    
+    
+    z-index: 2;
+}
+
+#home-welcome p {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    grid-column: 2/3;
+
+    padding: 10%;
+}
+
+#home-welcome img {
+    box-sizing: border-box;
+    width: 70%;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    padding: 1% 10%;
+    margin: auto;
+}
+
+#home-s1 h1 {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);  
+
+    grid-column: 2/3;
+    grid-row: 1/2;    
+    
+    z-index: 2;
+}
+
+#home-s1 p {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    grid-column: 1/2;
+
+    padding: 10%;
+}
+
+#home-s1 img {
+    box-sizing: border-box;
+    width: 70%;
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    padding: 1% 10%;
+    margin: auto;
+}
+
+#home-s2 {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    grid-column: 1/3;
+}
+
+#home-s2 h1 {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);  
+
+    grid-column: 5/8;
+    grid-row: 1/4;    
+    
+    z-index: 2;
+}
+
+#home-s2 p {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-color);
+    background-color: var(--accent3-color);
+
+    border: 20px solid var(--primary-color);
+    border-radius: 5px;
+
+    grid-column: 4/9;
+    grid-row: 9/13;
+
+    margin: auto;
+
+    z-index: 1;
+}
+
+#home-s2 img {
+    box-sizing: border-box;
+    width: 100%;
+    border: 10px solid var(--primary-color);
+
+    grid-column: 3/10;
+    grid-row: 1/11;
+}
+
+/* ###################################################################################### */
+/* #################################### Footer Section ################################## */
+/* ###################################################################################### */
+footer {
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-color);
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: var(--paragraph-font);
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    font-family: var(--paragraph-font);
+}
+
+footer a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+}
+
+footer a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    font-family: var(--paragraph-font);
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    #hero-box, .home-grid, #home-welcome, #home-s1, #home-s2 {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero-box {
+        margin-top: 0;
+    }
+    #hero-box h4 {
+        display: none;
+    }
+    #hero-box h1 {
+        color: #6f7364;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
