@@ -1,3 +1,4 @@
+// adding a comment to re upload any changes
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
