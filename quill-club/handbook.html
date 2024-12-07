@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="styles/#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
 
     <title>The Hedgehog Handbook | Guides & Tips for Every Owner</title>
 </head>
@@ -25,66 +27,125 @@
                 <img class="logo" src="images/logo.png" alt="QuillClub Logo">
             </a>
 
-            <nav>
+            <nav id="myTopnav" class="topnav">
                 <a href="index.html">Home</a>
                 <a href="handbook.html">The Hedgehog Handbook</a>
                 <a href="gathering-place.html">The Gathering Place</a>
                 <a href="site-plan.html">Site Plan</a>
+                <a href="javascript:void(0);" class="nav_icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </nav>
 
         </header>
 
         <main class="handbook-grid">
             <!-- TODO: Get answers put in -->
-            <section>
-                <h1>For those whoe are simply curious: General Questions</h1>
+            <section class="gen_questions_section">
+
+                <div class="questions-header-left">
+                    <img src="images/rsz_hedgehog-05.jpg" alt="Hedgehog 1">
+                    <div>
+                        <h1>For those who are simply curious:</h1>
+                        <h1>General Questions</h1>
+                    </div>
+                </div>
+
                 <ul>
-                    <li>What are the unique characteristics of hedgehogs?
-                        <p>Answer</p>
+                    <li><strong>What are the unique characteristics of hedgehogs?</strong>
+                        <ul>
+                            <li><strong>Quills:</strong> Their most distinctive feature is their quills, which they use for protection.</li>
+                            <li><strong>Nocturnal:</strong> They are primarily nocturnal, meaning they are most active at night.</li>
+                            <li><strong>Solitary:</strong> Hedgehogs are solitary animals and may not enjoy constant social interaction.</li>
+                            <li><strong>Self-anointing:</strong> They have a peculiar behavior called self-anointing, where they lick and spread saliva on their quills.</li>
+                            <li><strong>Picky eaters:</strong> They can be picky eaters, often preferring specific types of insects and foods.</li>
+                        </ul>
                     </li>
-                    <li>Are hedgehogs good pets?
-                        <p>Answer</p>
+                    <li><strong>Are hedgehogs good pets?</strong>
+                        <p>Hedgehogs can make good pets for the right person. They are relatively low-maintenance and can be entertaining to watch. However, they have specific needs that must be met. It's important to research and understand their care requirements before considering a hedgehog as a pet.</p>
                     </li>
-                    <li>How does one go about adopting or buying a hedgehog responsibly?
-                        <p>Answer</p>
+                    <li><strong>How does one go about adopting or buying a hedgehog responsibly?</strong>
+                        <ul>
+                            <li>Reputable Breeders: Look for breeders who prioritize the health and well-being of their hedgehogs. They should be able to provide information about the hedgehog's lineage, health history, and temperament.</li>
+                            <li>Animal Shelters or Rescue Organizations: Check local animal shelters or rescue organizations that may have hedgehogs available for adoption.</li>
+                            <li>Ask Questions: When considering a hedgehog, ask the breeder or shelter about the hedgehog's age, health, diet, and any specific care requirements.</li>
+                        </ul>
                     </li>
                 </ul>
-                <img src="images/rsz_hedgehog-05.jpg" alt="Hedgehog 1">
             </section>
 
-            <section>
-                <h1>New Hedgehog Owners might ask:</h1>
+            <section class="mid_questions_section">
+
+                <div class="questions-header-right">
+                    <img src="images/rsz_1european-hedgehog-hands-natural-garden-habitat.jpg" alt="Hedgehog 2">
+                    <div>
+                        <h1>New Hedgehog Owners might ask:</h1>
+                        <h1>Intermediate Questions</h1>
+                    </div>
+                </div>
+
+
                 <ul>
-                    <li>What should I feed my hedgehog?
-                        <p>Answer</p>
+                    <li><strong>What should I feed my hedgehog?</strong>
+                        <p>Hedgehogs are primarily insectivores. Their diet should consist of high-quality insect-based food, such as mealworms, crickets, and cockroaches. You can also supplement their diet with high-protein cat food. Avoid feeding them fruits, vegetables, or sugary treats, as these can lead to health problems.</p>
                     </li>
-                    <li>How much space does my hedgehog need?
-                        <p>Answer</p>
+                    <li><strong>How much space does my hedgehog need?</strong>
+                        <p>Hedgehogs need a spacious enclosure to roam around and exercise. A minimum enclosure size of 2 square feet of floor space is recommended. The enclosure should be tall enough to prevent your hedgehog from escaping and should be equipped with a solid, secure lid.</p>
                     </li>
-                    <li>How do I make sure my hedgehog is healthy?
-                        <p>Answer</p>
+                    <li><strong>How do I make sure my hedgehog is healthy?</strong>
+                        <p>To keep your hedgehog healthy, it's important to provide them with a balanced diet, clean water, and a clean living environment. Regular veterinary check-ups are also crucial to detect and treat any potential health issues early on. Additionally, you should monitor your hedgehog's weight, behavior, and appetite to ensure they are thriving.</p>
                     </li>
-                    <li>What behaviors are normal for hedgehogs, and what should I be concerned about?
-                        <p>Answer</p>
+                    <li><strong>What behaviors are normal for hedgehogs, and what should I be concerned about?</strong>
+
+                        <h4><strong>Good to see</strong></h4>
+                        <ul>
+                            <li><strong>Self-anointing:</strong> This is a normal behavior where hedgehogs rub their saliva on their quills.</li>
+                            <li><strong>Burrowing:</strong> Hedgehogs love to burrow and hide.</li>
+                            <li><strong>Nocturnal activity:</strong> Hedgehogs are primarily nocturnal, so they may be more active at night.</li>
+                        </ul>
+
+                        <h4><strong>Might be concerning</strong></h4>
+                        <ul>
+                            <li><strong>Lethargy:</strong> A lack of energy or interest in activities.</li>
+                            <li><strong>Changes in appetite:</strong> Eating more or less than usual.</li>
+                            <li><strong>Weight loss or gain:</strong> Significant changes in weight.</li>
+                            <li><strong>Skin issues:</strong> Redness, irritation, or hair loss.</li>
+                            <li><strong>Respiratory issues:</strong> Sneezing, coughing, or difficulty breathing.</li>
+                        </ul>
                     </li>
                 </ul>
-                <img src="images/rsz_1european-hedgehog-hands-natural-garden-habitat.jpg" alt="Hedgehog 2">
+
             </section>
 
-            <section>
-                <h1>Experienced Owners may be interested in more advanced topics, such as:</h1>
+            <section class="adv_questions_section">
+
+                <div class="questions-header-left">
+                    <img src="images/rsz_1european-hedgehog-natural-garden-habitat-with-green-grass.jpg" alt="Hedgehog 3">
+                    <div>
+                        <h1>Experienced Owners may be interested in:</h1>
+                        <h1>Advanced Questions</h1>
+                    </div>
+                </div>
+
                 <ul>
-                    <li>How can I enrich my hedgehog's environment?
-                        <p>Answer</p>
+                    <li><strong>How can I enrich my hedgehog's environment?</strong>
+                        <p>To keep your hedgehog mentally and physically stimulated, you can introduce various enrichment activities:</p>
+                        <ul>
+                            <li><strong>Provide hiding spots:</strong> Offer a variety of hiding spots, such as small boxes, tunnels, or cozy blankets.</li>
+                            <li><strong>Offer foraging opportunities:</strong> Scatter food items around the enclosure to encourage natural foraging behaviors.</li>
+                            <li><strong>Introduce new scents:</strong> Occasionally introduce new scents, like dried herbs or essential oil diffusers (pet-safe), to stimulate their senses.</li>
+                            <li><strong>Provide different textures:</strong> Offer different textures for exploration, such as soft blankets, rough surfaces, or chew toys.</li>
+                            <li><strong>Social interaction:</strong> Spend quality time with your hedgehog, handling them gently and providing positive reinforcement.</li>
+                        </ul>
                     </li>
-                    <li>What are the latest developments in hedgehog care?
-                        <p>Answer</p>
+                    <li><strong>What are the latest developments in hedgehog care?</strong>
+                        <p>Answer still in progress, Check back later</p>
                     </li>
-                    <li>How can I connect with other hedgehog enthusiasts or breeders?
-                        <p>Answer</p>
+                    <li><strong>How can I connect with other hedgehog enthusiasts or breeders?</strong>
+                        <p>Right Here, We are also working on connecting different platforms and groups to broaden the scope we can provide direction to.</p>
                     </li>
                 </ul>
-                <img src="images/rsz_1european-hedgehog-natural-garden-habitat-with-green-grass.jpg" alt="Hedgehog 3">
+
             </section>
 
         </main>

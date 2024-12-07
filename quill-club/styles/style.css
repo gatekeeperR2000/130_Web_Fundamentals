@@ -165,6 +165,8 @@ header {
 /* ###################################################################################### */
 /* ##################################### Main Section ################################### */
 /* ###################################################################################### */
+
+/* Home Page */
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -294,6 +296,98 @@ header {
     grid-row: 1/11;
 }
 
+/* Handbook Page */
+.gen_questions_section,
+.mid_questions_section,
+.adv_questions_section {
+    display: grid;
+    row-gap: 50px;
+}
+
+.questions-header-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 200px;
+}
+
+.questions-header-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    margin-top: 200px;
+}
+
+.questions-header-left div {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--heading-font);
+
+    background-color: var(--primary-color);
+    border: 10px solid var(--accent3-color);
+    border-radius: 10px;
+
+    padding: 10%;
+
+    position: relative;
+    left: -30px;
+}
+
+.questions-header-right div {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--heading-font);
+
+    background-color: var(--primary-color);
+    border: 10px solid var(--accent3-color);
+    border-radius: 10px;
+
+    padding: 10%;
+
+    position: relative;
+    right: -30px;
+}
+
+.questions-header-left img {
+    height: 700px;
+    max-width: 60vw;
+}
+
+.questions-header-right img {
+    height: 700px;
+    max-width: 60vw;
+}
+
+.gen_questions_section ul,
+.mid_questions_section ul,
+.adv_questions_section ul {
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+    font-size: 1.5em;
+    color: var(--paragraph-color-on-white);
+
+    border: 20px solid var(--accent2-color);
+    border-radius: 30px;
+
+    margin: 20px;
+}
+
+.gen_questions_section p,
+.mid_questions_section p,
+.adv_questions_section p {
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+    font-size: 1.5em;
+    color: var(--paragraph-color-on-white);
+}
+
+.handbook-grid strong {
+    font-size: 40px;
+}
+
 /* ###################################################################################### */
 /* #################################### Footer Section ################################## */
 /* ###################################################################################### */
@@ -338,9 +432,12 @@ footer .social img {
 /* #################################### Media  Section ################################## */
 /* ###################################################################################### */
 @media screen and (max-width: 900px) {
-    #hero-box, .home-grid, #home-welcome, #home-s1, #home-s2 {
+    #hero-box, .home-grid, #home-welcome, #home-s1, #home-s2,
+    .gen_questions_section, .mid_questions_section, .adv_questions_section,
+    .questions-header-left, .questions-header-right {
         display: block;
         height: auto;
+        margin: auto;
     }
     footer {
         flex-direction: column;
@@ -369,6 +466,20 @@ footer .social img {
     }
     #hero-box h1 {
         display: none;
+    }
+    .mid_questions_section img, .adv_questions_section img {
+        width: 100%;
+    }
+
+    .questions-header-left div, .questions-header-right div {
+        position: relative;
+        right: auto;
+        left: auto;
+    }
+
+    .gen_questions_section img {
+        display: block;
+        margin: 0 auto;
     }
     footer {
         margin-top: 25px;
