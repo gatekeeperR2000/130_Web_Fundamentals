@@ -166,7 +166,7 @@ header {
 /* ##################################### Main Section ################################### */
 /* ###################################################################################### */
 
-/* Home Page */
+/* Home Page ########################################## */
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -296,7 +296,7 @@ header {
     grid-row: 1/11;
 }
 
-/* Handbook Page */
+/* Handbook Page ########################################## */
 .gen_questions_section,
 .mid_questions_section,
 .adv_questions_section {
@@ -388,6 +388,120 @@ header {
     font-size: 40px;
 }
 
+/* Gathering Page ########################################## */
+.gathering-place-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+#gathering-Welcome-msg {
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    background-color: var(--accent1-color);
+    border: 5px solid var(--accent3-color);
+
+    text-align: center;
+
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#gathering-Welcome-msg h1 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+#gathering-Welcome-msg p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#my-hedgehog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 100px;
+}
+
+#my-hedgehog h1, #my-hedgehog p {
+    grid-column: 1/2;
+
+    text-align: center;
+}
+
+#my-hedgehog h1 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+
+    margin-top: 50px;
+}
+
+#my-hedgehog img {
+    box-sizing: border-box;
+    /* width: 25%; */
+    height: 600px;
+    margin: auto;
+
+    border: 10px solid var(--accent3-color);
+}
+
+#my-hedgehog p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    font-size: 2em;
+    font-weight: 600;
+
+    margin: auto;
+}
+
+#gathering-place-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#gathering-place-links section {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+#gathering-place-links section h1 {
+    font-family: var(--heading-font);
+}
+#gathering-place-links section p {
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+    font-size: 2em;
+
+    height: 100px;
+}
+#gathering-place-links section img {
+    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+    align-self: center;
+
+    border: 5px solid var(--accent1-color);
+
+    padding: 10%;
+    margin: auto;
+}
+
+/* #my-hedgehog p {
+
+} */
+
 /* ###################################################################################### */
 /* #################################### Footer Section ################################## */
 /* ###################################################################################### */
@@ -434,9 +548,19 @@ footer .social img {
 @media screen and (max-width: 900px) {
     #hero-box, .home-grid, #home-welcome, #home-s1, #home-s2,
     .gen_questions_section, .mid_questions_section, .adv_questions_section,
-    .questions-header-left, .questions-header-right {
+    .questions-header-left, .questions-header-right,
+    .gathering-place-grid, #gathering-place-links {
         display: block;
         height: auto;
+        margin: auto;
+    }
+    #gathering-Welcome-msg {
+        align-self: center;
+        width: 100%;
+    }
+    #my-hedgehog {
+        display: flex;
+        flex-direction: column;
         margin: auto;
     }
     footer {

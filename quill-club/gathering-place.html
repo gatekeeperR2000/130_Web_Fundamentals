@@ -27,18 +27,21 @@
                 <img class="logo" src="images/logo.png" alt="QuillClub Logo">
             </a>
 
-            <nav>
+            <nav id="myTopnav" class="topnav">
                 <a href="index.html">Home</a>
                 <a href="handbook.html">The Hedgehog Handbook</a>
                 <a href="gathering-place.html">The Gathering Place</a>
                 <a href="site-plan.html">Site Plan</a>
+                <a href="javascript:void(0);" class="nav_icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </nav>
 
         </header>
 
         <main class="gathering-place-grid">
 
-            <section>
+            <section id="gathering-Welcome-msg">
                 <h1>Gather From Near or Far</h1>
                 <p>
                     Upcoming Events and Meetups Join Our Virtual Gatherings and Club Activities Our Hedgehog 
@@ -53,7 +56,7 @@
                 </p>
             </section>
 
-            <section>
+            <section id="my-hedgehog">
                 <h1>Pipoca</h1>
                 <p>
                     Meet Miss Pipoca! She is a two year old white African Pygmy Hedgehog with snowflake patterned 
@@ -63,27 +66,29 @@
                     perfect. Pipoca loves to meet new friends and watch action shows.
                 </p>
                 <!-- TODO: Find another good picture of our hedgehog for here -->
-                <img src="images/#" alt="Need">
+                <img src="images/IMG_3203.png" alt="Need">
             </section>
 
             <!-- TODO: If I get far enough add the links and script to handle the actual gathering -->
-            <section>
-                <h1>Previous Gatherings</h1>
-                <p>See what kinds of activies we have had in the past!</p>
-                <img src="images/rsz_hedgehog-02.jpg" alt="Cute Hedgehog">
-            </section>
-
-            <section>
-                <h1>Share Your Little Ones</h1>
-                <p>What special memories do you have to share?</p>
-                <img src="images/rsz_hedgehog-03.jpg" alt="">
-            </section>
-
-            <section>
-                <h1>Future Gatherings</h1>
-                <p>Plan with others to meet together and make more memories!</p>
-                <img src="images/rsz_hedgehog-04.jpg" alt="Hiding">
-            </section>
+            <div id="gathering-place-links">
+                <section>
+                    <h1>Previous Gatherings</h1>
+                    <p>See what kinds of activies we have had in the past!</p>
+                    <img src="images/rsz_hedgehog-02.jpg" alt="Cute Hedgehog">
+                </section>
+    
+                <section>
+                    <h1>Share Your Little Ones</h1>
+                    <p>What special memories do you have to share?</p>
+                    <img src="images/rsz_hedgehog-03.jpg" alt="">
+                </section>
+    
+                <section>
+                    <h1>Future Gatherings</h1>
+                    <p>Plan with others to meet together and make more memories!</p>
+                    <img src="images/rsz_hedgehog-04.jpg" alt="Hiding">
+                </section>
+            </div>
 
         </main>
 
